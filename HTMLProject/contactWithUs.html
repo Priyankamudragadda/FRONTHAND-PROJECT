@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact With US</title>
+    <style>
+        .body{
+            background-color: aqua;
+         }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: aqua;
+        }
+
+        .contactCard {
+            display: flex;
+            justify-content: space-between;
+        }
+
+         .contactRight {
+            width: 48%;
+            padding: 10px;
+            border: 0px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            background-color: green;
+        }
+        .contactleft {
+            width: 48%;
+            padding: 10px;
+            border: 0px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            background-color: red;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* input, textarea {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        } */
+
+        table {
+            width: 100%;
+        }
+
+        table td {
+            padding: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Contact with Us</h1>
+        <p>
+            we would lou ti respond your queries and help you succeed 
+            <p>Feel to get in touch with us help</p>
+        </p>
+        <div class="contactCard">
+            <div class="contactleft">
+                <h2>send your Request</h2>
+                <form action="">
+                    <label for="">Full Name</label>
+                    <input type="text" placeholder="Enter your Name">
+                    <br/><br/>
+                    <label for="">Mobile No:</label>
+                    <input type="number" placeholder="Enter your Mobile Number">
+                    <br/>
+                    <label for="">Email: </label>
+                    <input type="text" placeholder="Enter your Email">
+                    <br/><br/>
+                    <label for="">Message</label>
+                    <textarea name="" id=""></textarea>
+                    <br/><br/>
+                    <button>Submit</button>
+                </form>
+            </div>
+                <div class="contactRight">
+                    <h2>Contact Us</h2>
+                    <table>
+                        <tr>
+                            <td>Email : </td>
+                            <td>priyanka@gmail.com</td>
+                        </tr>
+                         <tr>
+                            <td>Phone No : </td>
+                            <td>+91 9999999999</td>
+                        </tr>
+                        <tr>
+                            <td>Address : </td>
+                            <td>2-86/1/Balareddy Nagar<br/>Singarayakonda<br/>Ongole<br/>522660</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+</body>
+</html>
