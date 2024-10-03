@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>TO DO LIST</h1>
+    <input type="text" id="iteminput" placeholder="Enter item">
+    <button id="additem">Add Item</button>
+
+    <ul id="itemlist"></ul>
+
+    <script>
+        const button = document.getElementById('additem');
+        const itemlist = document.getElementById('itemlist')
+        const iteminput = document.getElementById('iteminput');
+
+        button.addEventListener('click', function() {
+            if(iteminput.value.trim() !== ''){
+                let newitem = document.createElement("li");
+                let itemText = document.createTextNode(iteminput.value);
+
+                // Create delete button
+                let deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.style.marginLeft = "10px";
+
+                // Add event listener to the delete button
+                deleteButton.addEventListener('click', function() {
+                    itemlist.removeChild(newitem);  // Remove the item from the list
+                });
+
+                // Append text and delete button to the list item
+                newitem.appendChild(itemText);
+                newitem.appendChild(deleteButton);
+                itemlist.appendChild(newitem);
+                iteminput.value = "";
+            }
+        });
+    </script>
+
+</body>
+</html>
